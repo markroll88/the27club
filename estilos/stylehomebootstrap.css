@@ -1,0 +1,292 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  
+     background-color: black;
+     /*margin-top: -1.5rem;*/
+     color: whitesmoke;
+ }
+a{
+  text-decoration: none;
+}
+header .navbar {
+   margin-top: -1.5rem;
+   padding-bottom:1rem;
+  padding-top: 1rem;
+
+}
+
+
+.navbar-brand{
+    font-size: smaller;
+}
+ 
+a.nav-link ul.dropdown-menu li a.dropdown-item .text-secondary,
+.text-secondary:hover,
+.text-secondary:focus {
+    color: #682DB5;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+    
+.carousel-caption .btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: blueviolet; 
+  color: whitesmoke;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+/*
+.carousel {
+    margin-top:-2rem;
+    margin-bottom: 1rem;*/
+.carousel {
+margin-top:  -1.5 rem;
+margin-bottom: 1rem;
+}
+
+
+.carousel-item::before{
+  content: "";
+  background-size: cover;
+  background: linear-gradient( #000b0b, #000c0c);
+  opacity: 0.5;
+  z-index: 3;
+  width: 100%;
+  height: 500vh;
+  position: absolute;
+
+}
+
+
+p.parrafo1 {
+    margin-left: auto;
+     width: 50vw
+}
+
+.parrafo1 a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.carousel a .btn-secondary > a{
+  color: white;
+}
+.carousel a .btn-secondary:hover {
+  animation: ajuste 1s 1 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 0.5em;
+    background-color: greenyellow;
+  }
+}
+.carousel.btn-outline-light > a{
+  color: white;
+}
+.carousel .btn-outline-light:hover {
+  animation: ajuste 1s 1 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 0.5em;
+    background-color: greenyellow;
+  }
+}
+
+
+
+.container .car-body{
+  background-color: rgb(25, 25, 25);
+}
+ .container .card-header p{
+  font-family: Roboto;
+  font-style: italic;
+  text-align: center;
+  color: red;
+  font-size: 1em; 
+}
+
+main .container .col:last-child{
+    justify-self: center;
+}
+.container .card-body a{
+    text-decoration: none;
+   /* color: black;*/
+   color: whitesmoke;
+    font-size: large;
+    
+}
+
+.container .card-body button{
+    font-size: small;
+}
+.container .card-body p{
+    font-size: smaller;
+}
+
+/*animacion card*/
+.card img{
+  transition: 6s;
+}
+
+.card img:hover{
+    scale: 1.4;
+}
+
+.btn-secondary{
+  transition: all.2s;
+}
+.btn-info{
+  transition: all.3s;
+}
+.btn-primary{
+  transition: all.2s;
+}
+.btn-secondary:hover{
+  transform: translate(30%);
+}
+.btn-warning{
+  transition: all.3s;
+}
+.btn-warning:hover{
+  transform: translate(30%);
+}
+.btn-danger{
+  transition: all.3s;
+}
+.btn-danger:hover{
+  transform: translate(30%);
+}
+.btn-info:hover{
+  transform: translate(30%);
+}
+.btn-primary:hover{
+  transform: translate(30%);
+}
+.card-title a{
+    transition: 2s;
+}
+.card-tittle a:hover{
+    color: red;
+}
+
+texted-muted{
+  transition: 9s;
+}
+.texted-muted:hover {
+  color: goldenrod;
+  scale: 1.4;
+}
+/*aside*/
+aside .btn-outline-light{
+  transition: bakground-color 1s;
+  
+}
+aside .btn-outline-light:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color: greenyellow;
+  }
+}
+
+
+form .form-control{
+       background-color: rgb(27, 27, 27) ;
+       color: grey;
+}
+form  a{
+  color: darkslategrey;
+}
+
+ form .btn-secondary,
+.btn-secondary:hover, 
+.btn-secondary:focus {
+  background-color: blueviolet; 
+  color: whitesmoke;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  transition: slide 3s forwards;
+}   
+form {
+  margin-bottom: 2rem;
+}   
+form .btn-secondary:hover {
+    animation: slide 3s forwards;
+  }
+  
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      transform: translateX(500px) translateY(0px);
+    }
+    50% {
+      transform: translateY(200px) translateX(500px) rotate(360deg);
+    }
+  }
+
+  a.volver {
+    color: darkslategrey;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  
+    }
+
+div.map{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+div.map h4{
+    font-family: Roboto;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    font-size: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.container-icono{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  background-color: black;
+  width: 8vw;
+  height: 5rem;
+  
+}
+.container-icono .fb{
+  color: blue;
+  font-size: 2rem;
+}
+.container-icono .ig{
+  color: deeppink;
+  font-size: 2rem;
+}
+footer{ 
+    margin-bottom: -3rem;
+}

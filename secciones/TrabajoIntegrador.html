@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" date" content=" 30/09/2022">
+    <meta name=" Author" lang="es" content=" Mar Brahim">
+    <meta name="keywords" content="codo a codo, gates, jobs, bootstrap, practica, form, formulario">
+    <meta name="robots" content="bootstrap, codo a codo">
+    <meta name="description" content="Intento de Replica Trabajo Integrador con Bootstrap">
+    <title> Trabajo Integrador 1-2 Boostrap</title>
+
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist ESP/css/bootstrap.min.css">
+    <link href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.rtl.css">
+    <link rel="canonical" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.rtl.css">
+    
+    <link href="../bootstrap-5.1.3-dist ESP/css/bootstrap.min.css" rel="stylesheet">
+    
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+     crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://getbootstrap.com/bootstrap-5.1.3-dist ESP/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+   -
+    <!-- Custom styles for nav offcanvas template -->
+    <link rel="stylesheet" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/navbars-offcanvas/navbar.css">
+    <link rel="stylesheet"  href="../estilos/styletrabajointegr.css" type="text/css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mx-0" style="background-color: rgba(53 57 63)" aria-label="Offcanvas navbar large">
+      <div class="container-fluid ms-5">
+        <img src="../resources/codoacodo.png" width="125px">
+        <a class="navbar-brand" href="#">Conf Bs As</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-body ms-5">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comprar tickets
+                </a>
+                <ul class="dropdown-menu bg-dark ">
+                  <li><a class="dropdown-item text-success" href="https://www.entradaweb.com.ar">
+                    <span class="d-inline-block bg-danger rounded-circle p-1"></span>Entrada Web</a></li>
+                  <li> <a class="dropdown-item text-success" href="https://www.tueentrada.com">
+                    <span class="d-inline-block bg-danger rounded-circle p-1"></span>Tu entrada</a></li>
+                  <li><a class="dropdown-item text-success" href="https://www.ticketportal.com.ar">
+                    <span class="d-inline-block bg-danger rounded-circle p-1"></span>Ticket portal</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  
+    <!--carrusel que puse a modo de hero o header- me falta mask/gradient-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="../resources/ba1.jpg"  alt="Foto-BA1" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"> </rect>
+          <div class="container">
+            <div class="carousel-caption text-end ">
+              <h1>Conf Bs As</h1>
+               <p class="parrafo1" >
+                  Bs As llega por primera vez a Argentina. Un evento para compartir con
+                  nuestra comunidad el conocimiento y experiencia de los expertos que
+                  estan creando el futuro de Internet. Ven a conocer a miembros del
+                  evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                  nivel que tenemos para ti. Te esperamos!
+               </p>
+              <p><a class="btn btn-lg btn-outline-light" href="#"> Quiero ser orador</a>
+                 <a class="btn btn-lg btn-success" href="#">Comprar tickets</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="../resources/ba2.jpg" alt="Foto-BA2"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"> </rect>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Codo a Codo</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum elit eget tellus tempus
+                placerat. 
+              </p>
+              <p><a class="btn btn-lg btn-secondary" href="#">Conoce más</a></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="../resources/ba3.jpg"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+           <rect width="100%" height="100%" fill="#777" > </rect>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Conf Bs As</h1>
+                <p> 
+                  Nulla posuere, nisl non tristique eleifend, odio turpis cursus massa, quis venenatis magna mi
+                  gravida massa. Donec lectus diam, semper interdum dolor vitae, vehicula placerat tellus.
+                </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+<!--Tema principal del sitio-->
+    <div class="container w-75">
+        <div class="card-header p-3 pb-md-4 mx-auto text-center">
+           <p class="fs-5 text-muted">CONOCE A LOS</p>
+           <h1 class="display-4 fw-normal">ORADORES</h1>
+          </div>
+         <div class="row row-cols-1 row-cols-md-3 mb-3 align-content-center">
+            <div class="col" > 
+               <div class="card mb-4 border-primary h-100 mx-1 ">
+                   <img src="../resources/steve.jpg" class="card-img-top" alt="Foto-Gates">
+                   <div class="card-body"style="background-color: rgba(245,245,245) ">
+                      <button type="button" class="btn btn-warning btn-sm"> Javascript</button>
+                      <button type="button" class="btn btn-info btn-sm"> React</button>
+                      <h3 class="card-title"> Steven Jobs</h3>
+                      <p class="card-text"><small class="texted-muted">
+                        Lorem ipsum dolor sit amet consectetur adipiscing
+                        elit. Et voluptatibus perterendis deleniti, totam fuga 
+                        sequi iste! Facilis explicabo repellat ut similique
+                        incidunt? Uliam nobis beatae, corporis veniam
+                        magni i ratione! 
+                      </small></p>
+                   </div>
+               </div>
+            </div>
+            <div class="col"> 
+               <div class="card mb-4 border-primary h-100">
+                   <img src="../resources/bill.jpg" class="card-img-top" alt="Foto-Gates">
+                   <div class="card-body"style="background-color: rgba(245,245,245)" >
+                      <button type="button" class="btn btn-warning btn-sm"> Javascript</button>
+                      <button type="button" class="btn btn-info btn-sm"> React</button>
+                      <h3 class="card-title"> Bill Gates </h3>
+                      <p class="card-text"><small class="texted-muted">
+                         Lorem ipsum  Lorem ipsum dolor sit amet consectetur adipiscing
+                         elit. Et voluptatibus perterendis deleniti, totam fuga 
+                         sequi iste! Facilis explicabo repellat ut similique
+                         incidunt? Uliam nobis beatae, corporis veniam
+                         magni i ratione!   
+                        </small></p> 
+                    </div>
+               </div>
+            </div>
+            <div class="col"> 
+               <div class="card mb-4 border-primary h-100">
+                   <img src="../resources/ada.jpeg" class="card-img-top" alt="Foto-Ada">
+                   <div class="card-body" style="background-color: rgba(245,245,245)">
+                     <button type="button" class="btn btn-secondary btn-sm"> Negocios</button>
+                     <button type="button" class="btn btn-danger btn-sm"> Star Tags</button>
+                     <h3 class="card-title"> Ada Lovelace </h3>
+                     <p class="card-text"><small class="texted-muted">
+                         Lorem ipsum dolor sit amet consectetur adipiscing
+                         elit. Et voluptatibus perterendis deleniti, totam fuga 
+                         sequi iste! Facilis explicabo repellat ut similique
+                         incidunt? Uliam nobis beatae, corporis veniam
+                         magni i ratione!
+                    </small></p>
+                   </div>
+               </div>
+            </div>
+         </div>
+    </div>
+  </main>
+ <!--Aside-->
+  <aside class="cointainer my-4">
+   <div class="row g-0">
+     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+       <div class="card h-100">
+          <img src="../resources/honolulu.jpg" alt="foto-honolulu" class="card-img">
+          </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+       <div class="card text-white bg-black mx-0 h-100">
+          <div class="card-body">
+              <h3 class="card-title"> Bs As - Octubre</h3>
+              <p class="card-text"><small class="texted-muted"> 
+                  Buenos Aires es la provincia y localidad más grande del estado de Argentina
+                  en los Estados Unidos, Honalulu es la más sureña de entre las principales
+                  ciudades estadounidenses. Aunque el nombre de Honalulu se refiere al área urbana
+                  en la costa sureste de la isla de Oahu, la ciudad y el condado de Honalulu han formado 
+                  una ciudad condado consolidada que cubre toda la ciudad(aproximadamente 600 km2 de superficie.)</small></p>
+              <a href="#" class="btn btn-outline-light"> Conoce más</a>
+          </div>    
+       </div>
+     </div>
+   </div>
+  </aside>
+<!-- Formulario-->
+ <form>
+  <div class="container text-center w-50">
+    <p> Conviertete en un Orador </p>
+    <h1>ORADOR </h1>
+    <p>Anotate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+      <div class="row mb-2">
+       <div class="col">
+         <div class="form-outline">
+          <input type="text" class=" form-control" placeholder="Nombre">
+        </div>
+       </div>
+       <div class="col">
+         <div class="form-outline">
+          <input type="text" class="form-control" placeholder="Apellido">
+         </div>
+       </div>
+      </div> 
+      <div class="input-outline mb-3 text-start ">
+        <textarea class="form-control"rows="10" aria-label="Con textarea">Sobre qué querés hablar?</textarea>
+        <p>Recuerda incluir un título para tu charla</p>
+      </div>
+      <button type="submit" class="btn btn-success btn-block w-100 mb-3">Enviar</button>
+  </div>
+  </form>
+  <div class="mt-auto text-grey">
+    <p>Contacto Desorrallador <a href="mailto:marcealebrahim@gmail.com" class="text-secondary">Mail</a>, by <a href="marcealebrahim@gmail.com" class="text-secondary">@mabK</a>.</p>
+  </div>
+  <footer class="footer-nav">
+    <!--barra del footer-->
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: rgba(30, 79, 109)" aria-label="Tenth navbar example" >
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav ">
+            <li class="nav-item  w-25 text-white-50 my-2 mx-1">
+              <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-3 mx-2">
+              <a class="nav-link active" href="#">Contáctanos</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-3 ms-5 me-1">
+              <a class="nav-link active" href="#">Prensa</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-3 mx-1">
+              <a class="nav-link active" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-2 mx-3">
+              <a class="nav-link active" href="#">Términos y Condiciones</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-3 mx-2">
+              <a class="nav-link active" href="">Privacidad</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-3 mx-2">
+              <a class="nav-link active" href="">Estudiantes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   </footer>
+  <script src="../bootstrap-5.1.3-dist ESP/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+       /bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+ </body>
+</html>

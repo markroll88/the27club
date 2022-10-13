@@ -1,0 +1,246 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+  
+  
+  }
+  header{
+    margin-top: -3rem;
+  }
+  
+  header .navbar {
+    margin-top: -1.5rem;
+    padding-bottom:1.5rem;
+    padding-top: 1.5rem;
+  
+  }
+
+  /* Carousel base class */
+
+.carousel {
+  margin-top:-1.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+p.parrafo1 {
+    margin-left: auto;
+     width: 50vw
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item::before{
+  content: "";
+  background-size: cover;
+  background: linear-gradient( #000b0b, #000c0c);
+  opacity: 0.5;
+  z-index: 3;
+  width: 100vw;
+  height: 500vh;
+  position: absolute;
+
+}
+/*animaciones*/
+aside .btn-outline-light:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color: greenyellow;
+  }
+}
+
+
+form {
+  margin-bottom: 5rem;
+}
+
+form .btn-success{
+    transition: slide 3s forwards;
+}   
+
+.carousel.btn-success > a{
+  color: white;
+}
+.carousel .btn-success:hover {
+  animation: ajuste 1s 1 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 0.5em;
+    background-color: greenyellow;
+  }
+}
+.carousel.btn-outline-light > a{
+  color: white;
+}
+.carousel .btn-outline-light:hover {
+  animation: ajuste 1s 1 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 0.5em;
+    background-color: greenyellow;
+  }
+}
+
+main h3{
+    font-weight: bolder;
+}
+
+.container .card-body h3{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.container .card-body button{
+  font-size: small;
+
+}
+/*animacion card*/
+.card img{
+  transition: 6s;
+}
+
+.card img:hover{
+    scale: 1.4;
+}
+
+.btn-secondary{
+  transition: all.2s;
+}
+.btn-info{
+  transition: all.3s;
+}
+.btn-primary{
+  transition: all.2s;
+}
+.btn-secondary:hover{
+  transform: translate(30%);
+}
+.btn-warning{
+  transition: all.3s;
+}
+.btn-warning:hover{
+  transform: translate(30%);
+}
+.btn-danger{
+  transition: all.3s;
+}
+.btn-danger:hover{
+  transform: translate(30%);
+}
+.btn-info:hover{
+  transform: translate(30%);
+}
+.btn-primary:hover{
+  transform: translate(30%);
+}
+.card a{
+    transition: 2s;
+}
+.card a:hover{
+    color: red;
+}
+
+texted-muted{
+  transition: 9s;
+}
+.texted-muted:hover {
+  color: goldenrod;
+  scale: 1.4;
+}
+
+aside .btn-outline-light{
+  transition: bakground-color 1s;
+  
+}
+
+aside.btn-outline-light > a{
+  color: white;
+}
+aside .btn-outline-light:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color: greenyellow;
+  }
+}
+
+
+form {
+  margin-bottom: 5rem;
+}
+
+form .btn-success{
+    transition: slide 3s forwards;
+}   
+
+form .btn-success:hover {
+    animation: slide 3s forwards;
+  }
+  
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      transform: translateX(500px) translateY(0px);
+    }
+    50% {
+      transform: translateY(200px) translateX(500px) rotate(360deg);
+    }
+  }
+
+
+/*barra del footer*/
+footer {
+  margin-bottom: -3rem; 
+  margin-top: 3rem;
+}
+
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}

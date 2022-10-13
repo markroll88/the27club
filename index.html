@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" date" content=" 4/10/2022">
+    <meta name=" Author" lang="es" content=" Mar Brahim">
+    <meta name="keywords" content="codo a codo, gates, jobs, bootstrap, practica, form, formulario">
+    <meta name="robots" content="bootstrap, codo a codo">
+    <meta name="description" content="Intento de Replica Trabajo Integrador con Bootstrap">
+    <title> Forever The 27 Club </title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist ESP/css/bootstrap.min.css">
+    <link href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.rtl.css">
+    <link rel="canonical" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/carousel/carousel.rtl.css">
+    
+    <link href="../bootstrap-5.1.3-dist ESP/css/bootstrap.min.css" rel="stylesheet">
+    
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+     crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://getbootstrap.com/bootstrap-5.1.3-dist ESP/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+   -
+    <!-- Custom styles for nav offcanvas template -->
+    <link rel="stylesheet" href="../bootstrap-5.2.1-examples/bootstrap-5.2.1-examples/navbars-offcanvas/navbar.css">
+    <link rel="stylesheet"  href="./estilos/stylehomebootstrap.css" type="text/css">
+  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mx-0" style="background-color: rgba(53 57 63)" aria-label="Offcanvas navbar large">
+      <div class="container-fluid ms-5">
+        <img src="./resources/logo.png" width="76px" height="50px">
+        <small class="navbar-brand">Prácticas</small>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-body ms-5">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./secciones/queeselclub.html" target="_blank">Qué es el Club de los 27</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="./secciones/quienes.html" target="_blank">Quienes lo Integran?</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./secciones/enlaces.html" target="_blank">Querés saber más?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./secciones/formulariodecontacto.html" target="_blank"> Formulario de Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" style="color: blueviolet;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Biografías: Los 7 </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-info" href="./secciones/bio1.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Robert Johnson</a></li>
+                  <li> <a class="dropdown-item text-info" href="./secciones/bio2.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Brian Jones</a></li>
+                  <li><a class="dropdown-item text-info" href="./secciones/bio3.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Jimi Hendrix</a>
+                  </li>
+                  <li><a class="dropdown-item text-info" href="./secciones/bio4.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Janis Joplin</a></li>
+                  <li> <a class="dropdown-item text-info" href="./secciones/bio5.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Jim Morrison</a></li>
+                  <li><a class="dropdown-item text-info" href="./secciones/bio6.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Kurt Cobain</a>
+                  </li>
+                  <li><a class="dropdown-item text-info" href="./secciones/bio7.html" target="_blank">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>Amy Winehouse</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <a id="arriba"></a>
+    <!--carrusel que puse a modo de hero o header-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/Mural27.jpg"  alt="Foto-BA1" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"> </rect>
+          <div class="container">
+            <div class="carousel-caption text-end ">
+              <h1>El Club del 27</h1>
+               <p class="parrafo1" >
+                Conformado por músicos, artitas, atletas que han fallecido trágicamente a los 27 años de edad. En esta 
+                larga Lista, encontramos también un argentino, Rodrigo Bueno y al único nieto varón de 
+                <a href="#Elvis"> Elvis Presley</a> 
+                En este sitio, la propuesta es conocer los 7 músicos que lideran la membresia del Club por hacer historia 
+                con su talento. Hallaras un pantallazo con sus fechas de nacimiento, profesión, fecha y causa de muerte
+               </p>
+              <p><a class="btn btn-lg btn-outline-light" href="secciones/enlaces.html" target="_blank"> Querés saber más?</a>
+                 <a class="btn btn-lg btn-secondary" href="secciones/referencias.html" target="_blank">Los 7 Magníficos</a></p>
+                
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/muralesqcobain.png" alt="Foto-BA2"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"> </rect>
+          <div class="container bg-gradient">
+            <div class="carousel-caption text-end">
+              <h1>Mural</h1>
+              <p  class="parrafo1">
+                Mural pintado por el artista brasileño Eduardo Kobra en Lower East Side, esq Rivington y Forsyth, 
+                East Village, Nueva York. 
+              </p>
+              <p><a class="btn btn-lg btn-secondary" href="https://www.impuremag.com/eduardo-kobra-arte-urbano" target="_blank">Eduardo Kobra</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/muralfrente.png"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+           <rect width="100%" height="100%" fill="#777" > </rect>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Eduardo Kobra</h1>
+                <p class="parrafo1"> 
+                  Eduardo kobra es el artista brasileño que pintó este Mural, una de sus tantas obras maestras, en Lower East Side, esq Rivington y Forsyth, 
+                East Village, Nueva York.
+                </p>
+              <p><a class="btn btn-lg btn-secondary" href="https://es.m.wikipedia.org/wiki/Eduardo_Kobra" target="_blank">Eduardo Kobra</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/mural_amy_hendrix.png"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+           <rect width="100%" height="100%" fill="#777" > </rect>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Club del 27</h1>
+                <p class="parrafo1"> 
+                  Conoce al artista detrás de este imponente mural. Ubicado en East Village, Nueva York. Esta es el Lower East 
+                 Side en la esquina de Rivington y Forsyth.
+                </p>
+              <p><a class="btn btn-lg btn-secondary" href="https://www.oldskull.net/street-art/eduardo-kobra/" target="_blank">El club del 27</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/muralmorrisoncobain.png"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" > </rect>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>The 27 Club Forever</h1>
+                <p class="parrafo1"> 
+                  Ubicado en East Village, Nueva York. Esta es el Lower East 
+                Side en la esquina de Rivington y Forsyth, el imponente mural fué realizado por un artista callejero. Conocelo
+                </p>
+              <p><a class="btn btn-lg btn-secondary" href="https://www.ecured.cu/Eduardo_Kobra" target="_blank">Eduardo Kobra</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="500vh" src="./resources/muralcobain.png"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#777" > </rect>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Mural: Los 7</h1>
+                <p class="parrafo1"> 
+                  Quieres conocer al artista de este mural Ubicado en East Village, Nueva York. Esta es el Lower East 
+                 Side en la esquina de Rivington y Forsyth? Conocelo
+                </p>
+              <p><a class="btn btn-lg btn-secondary" href="https://www.impuremag.com/eduardo-kobra-arte-urbano" target="_blank">El creador</a></p>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!--Cards-->
+    <div class="container w-75">
+        <div class="card-header p-3 pb-md-4 mx-auto text-center">
+           <p class="fs-5 text-muted-color-red fw-bolder">The 27 Club Forever:</p>
+           <h1 class="display-4 fw-normal">LOS 7 MAGNIFICOS</h1>
+          </div>
+         <div class="row row-cols-1 row-cols-md-3 mb-3 align-content-center">
+            <div class="col" > 
+               <div class="card mb-4 border-secondary">
+                   <img src="./resources/johnson1.png" class="card-img-top" alt="Foto-Johnson" >
+                   <div class="card-body"style="background-color: rgb(25,25,25) ">
+                      
+                      <button type="button" class="btn btn-info btn-sm"> Blues</button>
+                      <h3 class="card-title"> <a href="./secciones/bio1.html" target="_blank"> Robert Johnson </a></h3>
+                      <p class="card-text"><small class="texted-muted">
+                        Guitarrista, cantante y compositor, nacido el 08/05/1911, por causas
+                        Desconocidas, fallece el 16/08/1938. 
+                      </small></p>
+                   </div>
+               </div>
+            </div>
+            <div class="col"> 
+               <div class="card mb-4 border-secondary">
+                   <img src="./resources/jones11.png" class="card-img-top" alt="Foto-Jones" >
+                   <div class="card-body"style="background-color: rgb(25,25,25)" >
+                      <button type="button" class="btn btn-warning btn-sm"> Rock</button>
+                      
+                      <h3 class="card-title"><a href="./secciones/bio2.html" target="_blank" > Brian Jones </a></h3>
+                      <p class="card-text"><small class="texted-muted">
+                        Guitarrista, cantante y compositor, Nacido el 28/02/1942, fallece el 
+                        03/07/1969 Ahogado en su piscina.   
+                        </small></p> 
+                    </div>
+               </div>
+            </div>
+            <div class="col"> 
+               <div class="card mb-4 border-secondary">
+                   <img src="./resources/hendrix11.png" class="card-img-top" alt="Foto-Hendrix">
+                   <div class="card-body" style="background-color: rgb(25,25,25)">
+                     <button type="button" class="btn btn-warning btn-sm"> Rock</button>
+                     <button type="button" class="btn btn-info btn-sm"> Blues</button>
+                     <h3 class="card-title"> <a  href="./secciones/bio3.html" target="_blank"> Jimi Hendrix </a></h3>
+                     <p class="card-text"><small class="texted-muted">
+                      Guitarrista, cantante y compositor, nace 27/11/1942, muere
+                      el 18/09/1970 Asfixiado por su vomito intoxicado con sustancias.
+                    </small></p>
+                   </div>
+               </div>
+            </div>
+            <div class="col"> 
+              <div class="card mb-4 border-secondary">
+                  <img src="./resources/joplin11.png" class="card-img-top" alt="Foto-Joplin">
+                  <div class="card-body"style="background-color: rgb(25,25,25) " >
+                     <button type="button" class="btn btn-warning btn-sm"> Rock</button>
+                     <button type="button" class="btn btn-info btn-sm"> Blues</button>
+                     <h3 class="card-title"><a href="./secciones/bio4.html" target="_blank">Janis Joplin </a></h3>
+                     <p class="card-text"><small class="texted-muted">
+                      Cantante, Compositora, nacida el 19/01/1943, a 
+                      consecuencia de una Sobredosis de heroina fallece el 04/10/1970. 
+                       </small></p> 
+                   </div>
+              </div>
+           </div>
+           <div class="col"> 
+              <div class="card mb-4 border-secondary">
+                  <img src="./resources/morrison11.png" class="card-img-top" alt="Foto-Morrison">
+                  <div class="card-body" style="background-color: rgb(25, 25, 25)">
+                    <button type="button" class="btn btn-secondary btn-sm"> The Doors</button>
+                   
+                    <h3 class="card-title"> <a href="./secciones/bio5.html" target="_blank">Jim Morrison </a></h3>
+                    <p class="card-text"><small class="texted-muted">
+                      Cantante y compositor, nacido el 08/12/1943, fallece en la fecha 3/07/1971 como consecuencia de
+                      una Insuficiencia cardiaca.
+                   </small></p>
+                  </div>
+              </div>
+           </div>
+           <div class="col"> 
+            <div class="card mb-4 border-secondsry">
+                <img src="./resources/cobain11.png" class="card-img-top" alt="Foto-Cobain">
+                <div class="card-body"style="background-color: rgb(25, 25, 25)" >
+                   <button type="button" class="btn btn-secondary btn-sm"> Nirvana</button>
+  
+                   <h3 class="card-title"> <a href="./secciones/bio6.html" target="_blank">Kurt Cobain </a></h3>
+                   <p class="card-text"><small class="texted-muted">
+                    Cantante, guitarrista y compositor, nacido el 20/02/1967, comete 
+                    suicidio el 5/04/1994 estando bajo los efectos de heroína.   
+                     </small></p> 
+                 </div>
+            </div>
+         </div>
+         <div class="div"></div>
+         <div class="col"> 
+          <div class="card mb-4 border-secondary">
+              <img src="./resources/amy11.png" class="card-img-top" alt="Foto-Amy">
+              <div class="card-body" style="background-color: rgb(25,25,25)">
+                
+                <button type="button" class="btn btn-danger btn-sm"> Soul</button>
+                <h3 class="card-title"> <a href="./secciones/bio7.html" target="_blank"> Amy Winehouse </a></h3>
+                <p class="card-text"><small class="texted-muted">
+                  Cantante y compositora, nacida el 14/09/1983, fallece el
+                  23/07/2011 como consecuencia de Envenenamiento por alcohol.
+               </small></p>
+              </div>
+          </div>
+        </div> 
+        <div class="div"></div>
+     </div>  
+    </div>
+  </main>
+  <a class="volver" href="#arriba"> VOLVER</a>
+ <!--Aside-->
+  <aside class="cointainer my-4">
+   <div class="row g-0">
+     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+       <div class="card h-100">
+          <img src="./resources/elvis.jpg" alt="foto-elvis" class="card-img">
+          <a id="Elvis"></a>
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+       <div class="card text-white bg-dark mx-0 h-100" style="background-color: rgb(27, 27, 27);">
+          <div class="card-body">
+              <h3 class="card-title"> Elvis Presley</h3>
+              <p class="card-text">
+                <small class="texted-muted"> 
+                (Tupelo, Estados Unidos, 1935 - Memphis, 1977)  Cantante de rock and roll y actor
+                estadounidense. Nacido en el seno de una familia modesta, por lo que empezó a trabajar desde joven,
+                a los 11 años, y ante su insistencia, sus padres le regalaron su 1era guitarra. En 1948, su familia 
+                se trasladó a Memphis. A los 19 años, el productor Sam Phillips, propietario de Sun Records, editó 
+                un single con That's all right y Blue, Moon of Kentucky abriendole las puertas del programa radiofónico
+                de música country: Louisiana Hayride. En 1956 con Heartbreak Hotel (RCA) ganó el 1ero de sus discos
+                de oro, editó su 1er elepé: Elvis Presley y se comprometió por 7 años con los estudios cinematográficos 
+                Paramount. Como culminación del meteórico año de 1956, el 16 de noviembre se estrenó en Nueva York Love me tender, el 1er film que protagonizó Elvis Presley.
+                En marzo de 1957 adquirió la mansión de Graceland, Memphis. En 1958, en el cenit de su carrera, fué 
+                llamado a filas por el ejército y destinado a Berlín Occidental, donde conoció a Priscilla Ann Beaulieu, 
+                con quien contraería matrimonio 9 años después. Elvis Presley se licenció en marzo de 1960, reanudando su actividad artística con una larga serie de números 1 en las listas estadounidenses
+                como It's now or never o Are you lonesome tonight? y protagonizar no menos de 10 películas, ej: Girls, girls, girls (1962) y Viva Las  Vegas (1964).
+                En la 2da mitad de la década comenzó la «Invasión británica», con The Beatles, Rolling Stones;
+                lo que lo sumerge en una crisis hasta 1968, cuando se le ofreció protagonizar un especial televisivo que se convirtió en uno de los
+                mayores éxitos de la historia de la TV. Los 1eros años de la década de 1970, Elvis Presley pasa por otro
+                bache creativo, agravado por su adicción a las drogas y la reclusión en su mundo de
+                fantasía en su mansión de Graceland. En 1973 se divorcia de Priscilla Beaulieu y su imagen cambia: exagerado tupé, sobrepeso y trajes de cuero blanco con pedrería.
+                Tras caer inconsciente en varias ocasiones en el escenario, falleció de un ataque al corazón, sin duda consecuencia de sus excesos. Elvis Presley se ha convertido en un icono del siglo XX, como atestiguan sus más de 100 discos de
+                oro, platino y multiplatino. 
+              </small>
+            </p>
+              <a href="https://www.biografiasyvidas.com/biografia/p/presley.html" target="_blank" class="btn btn-outline-light" style="color: rgba(gold)"> Conoce más</a>
+          </div>
+       </div>
+     </div>
+   </div>
+  </aside>
+  <a class="volver" href="#arriba"> VOLVER</a>
+<!-- Formulario-->
+ <form>
+  <div class=" container text-center w-50">
+    <p> Tenés imágenes inéditas? </p>
+    <h1><a href="mailto: marcealebrahim@gmail.com"  subject="Asunto20%del20%mail" target="_blank">
+       📬Envianos un E-Mail </a></h1>
+    <p>Envianos tu artículo para que lo integremos al sitio</p>
+      <div class="row mb-2">
+       <div class="col">
+         <div class="form-outline">
+          <input type="text" class=" form-control" placeholder="Nombre">
+        </div>
+       </div>
+       <div class="col">
+         <div class="form-outline">
+          <input type="text" class="form-control" placeholder="Apellido">
+         </div>
+       </div>
+      </div> 
+      <div class="input-outline mb-3 text-start ">
+        <textarea class="form-control"rows="10" aria-label="Con textarea">✍ Si preferis dejarnos tu Comentario</textarea>
+        <p>No olvides comentarnos sobre quienes te interesaría tener un sitio dedicado.</p>
+      </div>
+      <button type="submit" class="btn btn-secondary bg-blueviolet w-100 mb-3">Enviar</button>
+  </div>
+  <a class="volver" href="#arriba"> VOLVER</a> 
+  </form>
+
+  <div class="map">
+    <div class="container-icono">
+      <span class="fb">
+        <a href="https://www.facebook.com/theforever27" target="_blank"> <img src="./resources/ICONOFB.jpg"></a>
+      </span>
+      <span class="ig">
+        <a href="https://instagram.com/forever.27.club?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./resources/ICONOIG.jpg"></a>
+      </span>
+     </div>
+    <h4> Ubicación del Mural</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.862794178373!2d-73.9936770495313!3d40.72103684489909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598688cf82e3%3A0xbd3a4a41f2439b09!2sForsyth%20St%20%26%20Rivington%20St%2C%20New%20York%2C%20NY%2010002%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665237155928!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="mt-auto text-white-50">
+    <p>Contacto Desorrallador <a href="mailto:marcealebrahim@gmail.com" class="text-grey">Mail</a>, by <a href="marcealebrahim@gmail.com" class="text-grey">@mabK</a>.</p>
+ </div>
+  <footer class="footer-nav">
+    <!--barra del footer animar links-->
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: rgba(53, 57, 63)" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center align-items-center text-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item  w-25 text-white-50 my-2 mx-1">
+              <a class="nav-link active" aria-current="page" href="./secciones/enlaces.html" target="_blank">Enlaces</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-0 mx-1">
+              <a class="nav-link active" href="./secciones/ContactaAyuda.html" target="_blank">Contacta por Ayuda</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-2 mx-1">
+              <a class="nav-link active" href="./secciones/referencias.html" target="_blank">Referencias</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-2 mx-1">
+              <a class="nav-link active" href="./secciones/codoacodo.html" target="_blank">Codo a Codo</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-0 mx-1">
+              <a class="nav-link active" href="./secciones/TrabajoIntegrador.html" target="_blank">Réplica T.I. Bootstrap</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-0 mx-1">
+              <a class="nav-link active" href="./secciones/TRABAJOPRACTICO1.html"  target="_blank">HOME ORIGINAL s/bootstrap</a>
+            </li>
+            <li class="nav-item  w-25 text-white-50 my-0 mx-1">
+              <a class="nav-link active" href="./secciones/formulariodecontacto.html" target="_blank">Formulario de Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   </footer>
+   <script src="../bootstrap-5.1.3-dist ESP/js/bootstrap.bundle.min.js"></script>
+  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+   /bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

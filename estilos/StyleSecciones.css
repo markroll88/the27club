@@ -1,0 +1,323 @@
+html{
+      scroll-behavior: smooth;
+    }
+
+/*stylesecciones del nav excepto Biografias*/
+/*header*/
+body{
+      background-color: rgb(30, 30, 30);
+      color: whitesmoke;
+
+}
+a {
+      text-decoration: none;
+}
+.headersec {
+      background-image: url(../resources/Mural27.jpg); 
+      width: 100vw;
+      height: 30vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+      transition: 9s;
+ }
+
+
+.headersec:hover {
+      
+              scale: 1.4;
+}
+
+h1{
+      font-family: Roboto;
+      font-style: italic;
+      text-align: center;
+      color: red;
+      font-size: 2em;
+      transition: all.3s;
+      }
+h1:hover{
+          transform: translate(30%);
+
+}
+
+
+/*main*/
+
+h2 {
+      color: rgb(43, 144, 226);
+      font-size: 3em; 
+      transition: all.3s;
+}
+h2:hover{
+        transition: slide 3s forwards;;
+}
+h2:hover {
+    animation: slide 3s forwards;
+  }
+  
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      transform: translateX(500px) translateY(0px);
+    }
+    50% {
+      transform: translateY(200px) translateX(500px) rotate(360deg);
+    }
+  }
+
+
+h3 {
+      color: crimson;
+      text-align: center;
+      transition: translate(25%);
+}
+
+h3:hover{
+      transform: translate(30%);
+}
+
+h4{ 
+      color: rgb(201, 19, 55);
+      text-align: center;
+      transition: translate(25%)
+}
+
+h4:hover{
+      transform: translate(30%);
+
+}  
+
+h5{
+      color: rgb(214, 40, 75);
+      text-align: center;
+      transition: translate(25%);
+}
+h6:hover{
+      transition: translate(30%);
+}  
+
+
+p {
+ text-align: justify;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 2.5vw;
+ margin-left: 10vw;
+ margin-right: 10vw;
+
+}
+
+
+p::first-letter {
+      font-size: 3em;
+      color: red;
+    }
+ p{
+      transition: 9s forward;
+    }
+    
+ p:hover {
+        color: goldenrod;
+        scale: 1.2;
+    }  
+
+
+ul{
+      list-style: none;
+      text-align: center;
+}
+
+ul{
+      transition: 9s;
+      transition: slide 3s forwards;;
+}
+ul:hover {
+    animation: slide 3s forwards;
+  }
+  
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      transform: translateX(500px) translateY(0px);
+    }
+    50% {
+      transform: translateY(200px) translateX(500px) rotate(360deg);
+    }
+  }
+    
+ul:hover {
+        color: goldenrod;
+      
+    }  
+
+a {
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: bolder;
+}
+.vista{
+      color: blueviolet;
+}
+
+q{
+      color: blueviolet;
+      font-style: italic;
+}
+form {
+      text-align: center;
+}
+article p .webyuda{
+      text-align: center;
+}
+/*footer*/
+
+.footersec{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image:url(../resources/imgfootersec.jpeg);
+      background-size: 100vw; 
+      height: 20vw;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100vw;
+      margin-top: 10vw;
+
+}
+.footersec::before{
+      content: "";
+      background-size: cover;
+      background: linear-gradient(#52c4df, #ad55c1);
+      opacity: 0.5;
+      z-index:0;
+      width: 100vw;
+      height: 20vw;
+      position: absolute;
+    }
+  
+button{
+      
+      background-color: blueviolet;
+      border-radius: 0.5vw;
+      box-shadow: 5vw;
+      width: 20vw;
+      height: 15vw;
+      transition: bakground-color 1s;
+      z-index: 1;
+
+ }
+
+ button:hover {
+      animation: ajuste 2s 2 forwards;
+    
+    }
+    @keyframes ajuste {
+      0% {
+      }
+    
+      100% {
+        padding: 2em;
+        background-color: greenyellow;
+      }
+    }
+
+
+h6 {
+      color: whitesmoke;
+      text-align: center;
+      font-size: 2.5vw;
+      padding-left: 1vw;
+      padding-right: 2vw;
+      margin: 0;
+
+}
+
+.formulario{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: blueviolet;
+}
+.formulario input{
+      background-color: rgb(25,25,25);
+      color: darkgrey;
+}
+
+.formulario p:nth-child(6){
+      align-self: flex-start;
+}
+.formulario p:last-child{
+      align-self: flex-start;
+}
+p.firma{
+      font-size: smaller;
+      color: grey;
+      text-decoration: none;
+      transition: none;
+      animation: none;
+      transform: none;
+}
+.firma a{
+      text-decoration: none;
+      color: grey;
+      font-size: small;
+
+
+
+}
+
+@media (min-width: 720px){
+      h2{
+            font-size:2em ;
+            text-align: center;
+      }
+      h3{
+            font-size: 2em;
+            text-align: center;
+      }
+
+      h4{
+            font-size:1em ;
+
+      }
+      h5{
+          font-size: 1em ;
+      }
+      p{
+            font-size: 1.5vw;
+      }
+      
+      p::first-letter {
+                  font-size: 2.3em;
+                  color: blueviolet;
+                  font-style: italic;
+                
+                }
+
+      a{
+            font-size: 2vw;
+            text-align: center;
+      }
+      .footersec{
+            margin-top: 5vw;
+      }
+      
+      button{
+            background-color: blueviolet;
+            border-radius: 0.5vw;
+            box-shadow: 2vw;
+            width: 8vw;
+            height: 4vw;       
+      }
+
+      
+      h6{
+            font-size: 1vw;
+            text-align: center;
+            padding: 1vw 2vw;
+      }
+
+}
+ 

@@ -1,0 +1,202 @@
+/*imagen de header con texto superpuest*/
+
+.headerhome {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5), 
+      rgba(0,0,0,0.5)
+      )
+      ,url(../resources/Mural27.jpg);
+
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 65vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  
+}  
+
+.contenedortexto {
+  width: 60vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: flex-end;
+}
+
+.contenedortexto .titulo {
+   /* display: inline-block;*/
+    display: block;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    font-size: 2em;
+}
+
+div.parrafoheader p{
+  display: none;
+
+}
+div.parrafoheader {
+    display: inline-block;
+    text-align: right;
+    color: white;
+    width: 60vw;
+    transition: background-color 2s;
+    font-size: 3vw;
+    
+}
+p > a{
+     color: blueviolet;
+     transition: 2s;
+     font-weight: bold ;
+}
+p a:hover{
+  color: rgb(252, 182, 5);
+  font-weight: bolder;
+}
+.headerhome > p > a:hover {
+    animation: ajuste 2s 2 forwards;
+}
+@keyframes ajuste {
+  0% {
+  }
+    50% {
+      padding: 2em;
+      background-color:whitesmoke; 
+      
+    }
+  }
+
+.pie1 {
+  display: inline-flex;
+  width: 30vw;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1vw 1vw 1vw 1vw;
+  transition: bakground-color 1s;
+  
+}
+
+.pie1 > a {
+  color: white;
+  text-decoration: none;
+}
+.pie1:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color:green;
+  }
+}
+
+
+.pie2 {
+  display: inline;
+  width: 30vw;
+  align-self: right;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1vw 1vw 1vw 1vw;
+  background-color: blueviolet;
+  transition: background-color 1s;
+
+}
+
+.pie2 > a {
+  color: white;
+  text-decoration: none;
+}
+.pie2:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color: green;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 720px){
+  .headerhome {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3), 
+        rgba(0,0,0,0.3)
+        )
+        ,url(../resources/Mural27.jpg);
+
+    width: 100%;
+    height: 114vh;
+  }
+  div.parrafoheader p{
+    display: block;
+  }
+  .contenedortexto .titulo {
+     display: inline-block;
+  }
+  .pie1 {
+      width: 15vw;
+  }
+  .pie2 {
+      width: 10vw;
+  }
+  div.parrafoheader {
+    font-size: 1.2vw;
+  }
+  .contenedortexto {
+    width: 50vw;
+  }
+  div.parrafoheader {
+    width: 40vw;
+  }
+    
+  .headerhome {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.3), 
+          rgba(0,0,0,0.3)
+          )
+          ,url(../resources/Mural27.jpg);
+      background-repeat: no-repeat;
+      background-size: 150vw;
+      width:100vw ;
+      height: 55vw;
+      
+    }  
+  }
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+

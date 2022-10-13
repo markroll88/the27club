@@ -1,0 +1,570 @@
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-bottom: -5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    background-color: #000;
+  /*  background-color: rgb(245,245,245);*/
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    font-size: 1em;
+
+}
+
+
+h2 {
+    text-align: center;
+    
+   /* color: crimson;*/
+    font-size: 2em;
+    font-style: oblique;
+}
+    
+h3 {
+    color: whitesmoke;
+    font-size: 2em; 
+}
+    
+h4 {
+    color: coral;
+    font-size: 2em;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.volver {
+color: darkslategrey;
+font-weight: bolder;
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.5vw;
+}
+
+.navbar {
+    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    font-family: bold 10px Arial, Helvetica, sans-serif;
+    font-size: 1-6vw;
+    list-style: none; 
+    background-color: rgba(53 57 63) ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  
+}
+
+.contlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 7vw;
+    height: 5vw;
+    padding: 1vw;
+}
+
+.leyenda {
+   font-size: smaller;
+   color: white;
+}
+
+
+#menu ul{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li a {
+
+    padding: 3px 1em;
+    border-radius: 1px solid rgb(43, 43, 51);
+    color: white;
+    background: rgba(53 57 63) ;
+    text-decoration: none;
+    
+}
+#menu ul li a.des{
+    color: blueviolet;
+}
+
+#menu li a:link { color: white;}
+#menu li a:hover { color: #000; background: #AAE; border-color: #227;}
+#menu li a#current {background:#AAE;}
+
+/*menu desplegable */
+.navbar ul ul {
+    display: none;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute; /*no en mdia*/
+    left: 30vw; /*no en media*/
+    
+}
+    
+.navbar ul ul li {
+    float: none;
+    width: 10vw; 
+    margin: 0;
+
+}
+
+.navbar ul ul a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+  
+}
+
+/* contenedor main*/
+.galeria {
+   /* display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill),  minmax();
+    margin-left: 15vw;*/
+   /* color: rgb(25, 25, 25);*/
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;  
+    flex-direction: column;
+
+}
+
+div.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px solid lightgray;
+   /* background-color: rgb(232, 232, 232);*/
+     background-color: rgb(25, 25, 25);
+     font-size: smaller;
+}
+.card img{
+    transition: 6s;
+}
+
+.card img:hover{
+    scale: 1.4;
+}
+
+.card a{
+    transition: 2s;
+}
+.card a:hover{
+    color: red;
+ }
+
+.buttoncard button:first-child{
+    border-radius: 0.4vw;
+    border: yellow;
+    background-color: yellow;
+    color:black;
+    transition: all.3s;
+}
+
+.buttoncard button:nth-child(2){
+    border-radius: 0.5vw;
+    border: cadetblue;
+    background-color: cadetblue;
+    color: white;
+    transition: all.3s;
+}
+.buttoncard button:nth-child(3){
+    border-radius: 0.4vw;   
+    border: #778;
+    background-color: #778;
+    color: white;
+    transition: all.3s;
+
+}
+.buttoncard button:nth-child(4){
+    border-radius: 0.5vw;
+    border: red;
+    background-color: red;
+    color: white;
+    transition: all.3s;
+}
+.buttoncard:hover{
+    transform: translate(30%);
+}
+
+div.card p{
+    display: none;
+}
+
+div.card > a {
+    color: white;
+    font-weight: bolder;
+    padding: 0.5VW;
+    font-size: small;
+
+}
+
+.parrafocard {
+    width: 9vw;
+    padding: 0.5VW;
+}
+
+.galeria .card .parrafocard p{
+    text-align: left;
+}
+
+.galeria .card .parrafocard p{
+    text-align: left;
+    transition: 9s;
+}
+
+.galeria .card .parrafocard:hover {
+    color: goldenrod;
+    scale: 1.4;
+
+}
+
+/* aside presley*/
+.aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    background-color:rgb(27, 27, 27);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    align-items: center;
+
+
+}
+.asideparrafo {
+    color: white;
+    width: 100%;
+    text-align: justify;
+    padding: 1vw;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1vw 2vw
+}
+.asideimage{
+    display: none;
+}
+.asidebutton{
+  display: block;
+  width: 40vw;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1vw 1vw 1vw 1vw;
+  transition: bakground-color 1s;
+  
+}
+
+.asidebutton > a{
+  color: white;
+}
+.asidebutton:hover {
+  animation: ajuste 2s 2 forwards;
+
+}
+@keyframes ajuste {
+  0% {
+  }
+
+  100% {
+    padding: 2em;
+    background-color: greenyellow;
+  }
+}
+
+
+/* seccion comentarios y envio mail*/
+
+div.comentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.comentarios textarea{
+    background-color: rgba(27,27,27);
+    color: whitesmoke;
+    width: 50vw;
+    text-align: center;
+}
+
+.comentarios a {
+    color: darkslategrey;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:3vw
+
+}
+.comentarios form p{
+    font-size: small;
+}
+.comentarios form p:nth-child(5){
+    font-size: smaller;
+    text-align: left;
+}
+.contbutton {
+    width: 50vw;
+
+}
+
+input.comentbutton {
+    width: 50vw;
+    /*align-self: center;*/
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: slide 3s forwards;;
+}
+.comentbutton:hover {
+    animation: slide 3s forwards;
+  }
+  
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      transform: translateX(500px) translateY(0px);
+    }
+    50% {
+      transform: translateY(200px) translateX(500px) rotate(360deg);
+    }
+  }
+  
+  
+  div.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .container-icono{
+    background-color: black;
+    width: 5vw;
+    height: 3rem;
+  }
+    
+
+footer .firma{
+    margin-left: 2rem;
+}
+/* barra nav footer*/
+.navfooter{
+    margin-bottom: -4rem;
+
+}
+.navfooter ul {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          display: flex; 
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          background-color: rgba(53 57 63) ;
+        /*  border-bottom: 1px solid #778;*/
+          font-family: bold 10px Arial, Helvetica, sans-serif;
+}
+
+.navfooter  li {
+          width: max-content;
+          list-style: none;
+          padding: 3px;
+        /*  border: 1px solid rgba(53 57 63) ;*/
+          text-align: center;
+}
+
+.navfooter li a {
+    color: white;
+    padding: 4px;
+    background: rgba(53 57 63) ;
+    text-decoration: none;
+
+}
+
+.navfooter li a:link { color: white;}
+.navfooter li a:hover { color: #000; background: #AAE; border-color: #227;}
+.navfooter li a#current {background:#AAE;}
+  
+
+
+
+
+@media (max-width: 479px){
+     
+    .galeria {
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+}
+    
+
+@media (min-width:500px) and (max-width:767px) {
+
+    .asideimage{
+        display: none;
+
+    }
+
+    .asideparrafo{
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+
+}
+ 
+
+}
+
+@media (min-width: 768px){
+     
+ 
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+
+
+        
+    #menu{
+        padding-right: 6vw;
+    }
+    #menu ul li{
+        
+        display: inline;
+        position: relative;
+       
+    }
+    #menu ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        width: 14vw;
+       /* display: none;*/
+    }
+    #menu ul ul li{
+        line-height: 120%;
+        padding: 3px;
+        display: block;
+        width: 15vw;
+
+    }
+     /*   line-height: 120%;
+        padding: 10px 15px;*/
+
+    .galeria {
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    
+    .card{
+           display: flex;
+           text-align: left;
+    }
+    div.card p{
+        display: block;
+    }
+    
+    .card .buttoncard {
+        align-self: start;
+    }
+    
+    .galeria .card a{
+        align-self: start;
+    }
+   
+    .aside{
+        flex-direction: row;
+    }
+
+    .asideparrafo{
+        width: 50%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .asideimage {     
+          /* background-image: url("../RESOURCES/ELVIS.jpg");
+           background-size: cover;*/
+           display: block;
+           height:45vw;
+           width: 50vw;
+    }
+    .asidebutton{
+        width: 15vw;
+    }
+
+    .comentarios form p{
+        font-size: large;
+    }
+    .comentarios form p:nth-child(5){
+        font-size: small;
+        text-align: left;
+    }
+    .navfooter ul{
+        flex-direction: row;
+    }
+    .navfooter li{
+        width: 10vw;
+    }
+        
+}
+
+    
